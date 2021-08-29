@@ -1,0 +1,372 @@
+/* full body CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  
+}
+
+/* navigation bar logo */
+.logo {
+  margin: 0px 10px;
+}
+
+.logo img {
+  width: 115px;
+  padding: 5px 15px;
+}
+
+/* navigation bar ul items styling */
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#navbar ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.5em;
+}
+
+/* arrange ul li tags right */
+#navbar ul li a {
+  display: block;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: 450;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar ul li a:hover {
+  color: blue;
+  background-color: white;
+}
+
+/* container CSS */
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  height: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
+
+#container::before {
+  content: "";
+  background: url("data/chem_en2.jpg") no-repeat;
+  box-shadow: inset 0 0 0 1000px rgb(10 10 10 / 28%);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* cotainer button css */
+#btn {
+  color: white;
+  background-color: #030973;
+  font-size: 1.4rem;
+  font-weight: 40;
+  padding: 10px 15px;
+  margin: 40px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #030973;
+}
+
+#btn:hover {
+  font-size: 1.4rem;
+  background: white;
+  color: #030973;
+  border: 2px solid #030973;
+}
+
+/* div chem line css */
+#chem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#chem img {
+  width: 70px;
+  margin: 2px 10px;
+  margin-bottom: 20px;
+}
+
+/* div intro CSS */
+#intro,
+#intro1 {
+  margin: 50px auto;
+  padding: 30px 50px;
+  max-width: 90%;
+  background-color: white;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  box-shadow: 0px 0px 10px 2px gray;
+}
+
+#intro img,
+#intro1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-text2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 25px;
+}
+
+/* faculty page css */
+#faculty {
+  background-color: black;
+  color: white;
+  margin: 40px 0px;
+}
+
+div #adhead {
+  font-size: 1.8rem;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#faculty h1::after {
+  content: "";
+  border: 2px solid #2f9484;
+  display: block;
+  width: 320px;
+  margin: 14px auto;
+}
+div .line {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px auto;
+  line-height: 1.8rem;
+}
+
+/* faculty members row css */
+#row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+div#row .box {
+  padding: 10px 15px;
+}
+div#row .box .box1,
+div#row .box .box2,
+div#row .box .box3 {
+  padding: 10px 20px;
+}
+
+div#row .box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  border: 10px double #fff;
+  border-radius: 10px;
+}
+
+#row h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 450;
+  margin: 30px auto;
+  letter-spacing: 0.1rem;
+}
+
+#row h3::after {
+  content: "";
+  border: 2px solid #1a94c4;
+  display: block;
+  width: 310px;
+  margin: 24px auto;
+}
+#row h4 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 10px auto;
+}
+
+#row h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 10px auto;
+}
+
+/* about svnit page CSS */
+.svnit {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+div #head {
+  font-size: 1.8rem;
+  padding-top: 40px;
+  text-align: center;
+  font-weight: 450;
+}
+
+div .nit {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 100px;
+  line-height: 1.8rem;
+}
+/* about svnit css page images */
+
+#cllg img {
+  display: block;
+  margin: 40px auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  max-width: 100%;
+  padding: 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* contact us CSS */
+
+div.svnit h1#head::after {
+  content: "";
+  border: 2px solid #2f9484;
+  display: block;
+  width: 320px;
+  margin: 14px auto;
+}
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background: url("data/contact-us-.jpg") no-repeat center center/cover;
+}
+
+#block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+#block #location h1 strong {
+  padding: 1.5rem 1rem;
+}
+
+#location,
+#social {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#location h4 {
+  margin: 10px 5px;
+}
+#social a img {
+  width: 70px;
+  margin: 10px;
+}
+
+/* footer part */
+
+#foot {
+  color: white;
+  background-color: #030973;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* all text data CSS */
+
+#heading {
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2px 2px 2px #030973;
+
+  font-family: "Kaushan Script", cursive;
+}
+
+#container p {
+  padding: 5px 150px;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  /* text-shadow:2px 2px 4px #030973; */
+}
+hr {
+  margin: 20px 5px;
+}
+strong {
+  color: #030973;
+}
+
+b {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #030973;
+}
+address {
+  font-weight: 300;
+  font-style: italic;
+}
+
+a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #030973;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: black;
+  padding: auto;
+}
